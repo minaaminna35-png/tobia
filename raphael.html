@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملاك روفائيل</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: #08111f;
+            color: white;
+            line-height: 1.8;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #050b15;
+        }
+
+        .logo {
+            color: gold;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding: 50px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .hero img {
+            width: 380px;
+            border-radius: 20px;
+            border: 5px solid gold;
+            box-shadow: 0 0 30px gold;
+            transition: .4s;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: gold;
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px;
+            animation: fadeInUp 1s ease;
+        }
+
+        h2 {
+            text-align: center;
+            color: gold;
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #13233d;
+            padding: 25px;
+            border-radius: 15px;
+            transition: .4s;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px gold;
+            border-color: gold;
+        }
+
+        .card h3 {
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #555;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background: gold;
+            color: black;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #050b15;
+            margin-top: 40px;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeIn {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">سفر طوبيا📖</div>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="tobit.html">طوبيت الأب</a>
+            <a href="tobias.html">طوبيا الابن</a>
+            <a href="sara.html">سارة</a>
+            <a href="raphael.html">الملاك روفائيل</a>
+            <a href="حنه.html">حنه</a>
+            <a href="رعوئيل.html">رعوئيل</a>
+            <a href="اخيكار .html">اخيكار</a>
+            <a href="غابلوس.html">غابيلوس</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <img src="images/الملا رفاءيل.jpg" alt="الملاك روفائيل">
+
+        <div>
+            <h1>الملاك روفائيل</h1>
+            <p>
+                ملاك مرسل من الله ليقود طوبيا ويحميه ويكشف خطة الله في الرحلة.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- NOBZA -->
+    <section>
+        <h2>نبذة عن الملاك روفائيل</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>👼 من هو؟</h3>
+                <p>أحد رؤساء الملائكة المرسلين من الله.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧭 الرحلة</h3>
+                <p>رافق طوبيا دون أن يكشف هويته.</p>
+            </div>
+
+            <div class="card">
+                <h3>✨ المعجزات</h3>
+                <p>شفاء سارة وإعادة بصر طوبيت.</p>
+            </div>
+
+            <div class="card">
+                <h3>📖 الهدف</h3>
+                <p>تنفيذ خطة الله في حياة طوبيا.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TABLE -->
+    <section>
+        <h2>معلومات سريعة</h2>
+
+        <table>
+            <tr>
+                <th>الاسم</th>
+                <td>روفائيل</td>
+            </tr>
+
+            <tr>
+                <th>النوع</th>
+                <td>ملاك</td>
+            </tr>
+
+            <tr>
+                <th>المهمة</th>
+                <td>الإرشاد والحماية</td>
+            </tr>
+
+            <tr>
+                <th>الأعمال</th>
+                <td>معجزات إلهية</td>
+            </tr>
+
+            <tr>
+                <th>الظهور</th>
+                <td>في صورة إنسان</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- LESSONS -->
+    <section>
+        <h2>أهم الدروس</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>👼 العناية الإلهية</h3>
+                <p>الله لا يترك أولاده وحدهم.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧭 الإرشاد</h3>
+                <p>الله يرسل من يقود الإنسان للطريق الصحيح.</p>
+            </div>
+
+            <div class="card">
+                <h3>✨ المعجزات</h3>
+                <p>الله قادر أن يصنع المستحيل.</p>
+            </div>
+
+            <div class="card">
+                <h3>🙏 الحماية</h3>
+                <p>الله يحمي المؤمنين في كل وقت.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOURCE -->
+    <section>
+        <h2>من أسفر؟</h2>
+
+        <div class="card">
+            سفر طوبيا من الأسفار القانونية الثانية، ويظهر فيه دور الملائكة في تنفيذ إرادة الله وحماية الإنسان.
+        </div>
+    </section>
+
+    <footer>
+        ✝ مشروع سفر طوبيا
+    </footer>
+
+</body>
+
+</html>

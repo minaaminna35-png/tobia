@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>سفر طوبيا</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Tahoma;
+            background: #0b1020;
+            color: #fff
+        }
+
+        header {
+            padding: 25px;
+            text-align: center;
+            background: linear-gradient(90deg, #fbff00, #1565c0)
+        }
+
+        h1 {
+            margin: 0
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 25px
+        }
+
+        .card {
+            background: #18233d;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 15px #0006;
+            transition: .3s
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.03)
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            cursor: pointer
+        }
+
+        .card h3 {
+            text-align: center
+        }
+
+        a.btn {
+            display: block;
+            margin: 15px;
+            background: #ffc107;
+            color: #000;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold
+        }
+
+        #viewer {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: #000d;
+            justify-content: center;
+            align-items: center
+        }
+
+        #viewer img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>📖 سفر طوبيا - ملخص الإصحاحات</h1>
+    </header>
+    <div class="grid">
+        <div class="card"><img src="images/Screenshot 2026-07-08 190850.png" onclick="show(this.src)">
+            <h3>الإصحاح 1</h3><a class="btn" href="https://www.youtube.com/watch?v=x4y_pSJfC90" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/الصحاح الثاني.png" onclick="show(this.src)">
+            <h3>الإصحاح 2</h3><a class="btn" href="https://www.youtube.com/watch?v=-SN-lcQWwuE" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/الاصحاح الثالث.png" onclick="show(this.src)">
+            <h3>الإصحاح 3</h3><a class="btn" href="https://www.youtube.com/watch?v=Z2vh5o9fA84" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/الاصحاح الرابع.png" onclick="show(this.src)">
+            <h3>الإصحاح 4</h3><a class="btn" href="https://www.youtube.com/watch?v=tFzbMOoP6Mo" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/الاصحاح الخامس.png" onclick="show(this.src)">
+            <h3>الإصحاح 5</h3><a class="btn" href="https://www.youtube.com/watch?v=sRVL8mim7Jc" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/سادس.png" onclick="show(this.src)">
+            <h3>الإصحاح 6</h3><a class="btn" href="https://www.youtube.com/watch?v=AsH600hqWJo" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/سابع.png" onclick="show(this.src)">
+            <h3>الإصحاح 7</h3><a class="btn" href="https://www.youtube.com/watch?v=OtvEPBtLwfw" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/ثامن.png" onclick="show(this.src)">
+            <h3>الإصحاح 8</h3><a class="btn" href="https://www.youtube.com/watch?v=7ukml1DmPbE" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/تاسع.png" onclick="show(this.src)">
+            <h3>الإصحاح 9</h3><a class="btn" href="https://www.youtube.com/watch?v=icmnD4nYNCA" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/10.png" onclick="show(this.src)">
+            <h3>الإصحاح 10</h3><a class="btn" href="https://www.youtube.com/watch?v=_1vSZznsQYA" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/11.png" onclick="show(this.src)">
+            <h3>الإصحاح 11</h3><a class="btn" href="#https://www.youtube.com/watch?v=tVGA-r9ZsUE" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/12.png" onclick="show(this.src)">
+            <h3>الإصحاح 12</h3><a class="btn" href="https://www.youtube.com/watch?v=Ou041FEvWDk" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/13.png" onclick="show(this.src)">
+            <h3>الإصحاح 13</h3><a class="btn" href="https://www.youtube.com/watch?v=0wprY2BBs7g" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+        <div class="card"><img src="images/14.png" onclick="show(this.src)">
+            <h3>الإصحاح 14</h3><a class="btn" href="https://www.youtube.com/watch?v=taB9f5mDXCk" target="_blank">🎥
+                مشاهدة التلخيص</a>
+        </div>
+    </div>
+    <div id="viewer" onclick="hide()"><img id="big"></div>
+    <script>
+        function show(s) { document.getElementById('big').src = s; viewer.style.display = 'flex' }
+        function hide() { viewer.style.display = 'none' }
+    </script>
+</body>
+
+</html>
